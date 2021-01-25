@@ -20,7 +20,9 @@ namespace DevBlack.Northwind.Business.DependencyResolves.Ninject
         public override void Load()
         {
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
-            Bind<IProductDal>().To<EfProductDal>();
+            Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
+            Bind<IUserDal>().To<EfUserDal>();
+            Bind<IUserService>().To<UserManager>();
             Bind<DbContext>().To<NorthwindContex>();
             Bind(typeof(IQeryableRepository<>)).To(typeof(EfQeryableRepository<>));
         }

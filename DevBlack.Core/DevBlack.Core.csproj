@@ -108,6 +108,7 @@
     <Compile Include="CrossCutingConcerns\Logging\LogDetail.cs" />
     <Compile Include="CrossCutingConcerns\Logging\LogParameter.cs" />
     <Compile Include="CrossCutingConcerns\Security\Web\AuthenticationHelper.cs" />
+    <Compile Include="CrossCutingConcerns\Security\Web\SecurityUtilities.cs" />
     <Compile Include="CrossCutingConcerns\Security\İdentity.cs" />
     <Compile Include="CrossCutingConcerns\Validation\FluentValidation\ValidatorTool.cs" />
     <Compile Include="DataAcsess\EntityFramework\EfQeryableRepository.cs" />
